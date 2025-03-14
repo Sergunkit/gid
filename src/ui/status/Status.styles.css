@@ -1,0 +1,64 @@
+.status {
+  --status-font-size: 14px;
+  --status-line-height: 16px;
+  --status-padding: 3px 11px;
+  align-items: center;
+  border: 1px solid #dee2e6;
+  border-radius: 50vw;
+  color: #000;
+  display: flex;
+  gap: 4px;
+  padding: var(--status-padding);
+}
+
+.status-small {
+  --status-font-size: 10px;
+  --status-line-height: 12px;
+  --status-padding: 2px 11px;
+}
+
+.status-icon {
+  height: 12px;
+  margin-left: -4px;
+  position: relative;
+  width: 12px;
+}
+
+.status-icon::before {
+  background-color: currentcolor;
+  border-radius: 50%;
+  content: '';
+  height: 6px;
+  inset: 0;
+  margin: auto;
+  position: absolute;
+  width: 6px;
+}
+
+.status-green {
+  color: #20c997;
+}
+
+.status-orange {
+  color: #ff922b;
+}
+
+.status-blue {
+  color: #339af0;
+}
+
+.status-gray {
+  color: #ced4da;
+}
+
+.status-red {
+  color: #ff6b6b;
+}
+
+.status-title {
+  font-family: inherit;
+  font-size: var(--status-font-size);
+  font-weight: 400;
+  line-height: var(--status-line-height);
+  text-align: left;
+}

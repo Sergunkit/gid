@@ -1,0 +1,26 @@
+.status-page {
+  align-items: center;
+  color: var(--ps-color-dimmed);
+  display: flex;
+  flex-direction: column;
+  font-family: inherit;
+  gap: 4px;
+  height: 100%;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+}
+
+.status-page-title {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 24px;
+  margin-top: 16px;
+}
+
+.status-page-description {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+  margin-bottom: 16px;
+}

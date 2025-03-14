@@ -1,0 +1,90 @@
+.breadcrumbs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 24px;
+}
+
+.breadcrumbs-button {
+  align-items: center;
+  background-color: #f1f3f5;
+  border-radius: 16px;
+  border-width: 0;
+  color: #868e96;
+  cursor: pointer;
+  display: flex;
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 400;
+  gap: 4px;
+  line-height: 20px;
+  padding: 4px 8px 4px 12px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color var(--ps-duration, .15s) ease-in-out;
+  user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+.breadcrumbs-button:hover {
+  background-color: #f7f9fb;
+}
+
+.breadcrumbs-button:focus {
+  outline: none;
+}
+
+.breadcrumbs-button::after {
+  background-image: url('data:image/svg+xml,%3Csvg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"%3E%3Cpath d="m5 12.5 5-5 5 5" stroke="%23868E96" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round"/%3E%3C/svg%3E');
+  background-position: right center;
+  background-repeat: no-repeat;
+  content: '';
+  display: block;
+  height: 20px;
+  width: 20px;
+}
+
+.breadcrumbs.opened .breadcrumbs-button::after {
+  transform: rotate(180deg);
+}
+
+.breadcrumbs-item {
+  align-items: center;
+  background-image: url('data:image/svg+xml,%3Csvg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"%3E%3Cpath d="m7.5 5 5 5-5 5" stroke="%23868E96" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round"/%3E%3C/svg%3E');
+  background-position: right center;
+  background-repeat: no-repeat;
+  display: block;
+  height: 28px;
+  padding-right: 28px;
+}
+
+.breadcrumbs-item:last-child {
+  background-image: none;
+  padding-right: 0;
+  pointer-events: none;
+}
+
+.breadcrumbs-link {
+  color: #868e96;
+  display: block;
+  font-size: 14px;
+  line-height: 16px;
+  overflow: hidden;
+  padding-bottom: 6px;
+  padding-top: 6px;
+  text-decoration: none;
+  text-overflow: ellipsis;
+  transition: color var(--ps-duration, .15s) ease-in-out;
+  white-space: nowrap;
+}
+
+.breadcrumbs-link:hover,
+.breadcrumbs-item:last-child {
+  color: #228be6;
+}
+
+.breadcrumbs.opened .breadcrumbs-item:not(:last-child, :first-child) {
+  display: none;
+}

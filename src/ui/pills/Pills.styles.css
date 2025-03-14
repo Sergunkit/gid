@@ -1,0 +1,66 @@
+.pill-group {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.pill {
+  align-items: center;
+  background-color: #f1f3f5;
+  border-radius: 50vw;
+  color: #212529;
+  cursor: default;
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  padding: 4px 8px;
+  text-align: left;
+  user-select: none;
+}
+
+.pill-text {
+  display: block;
+  font-family: inherit;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14px;
+}
+
+.pill-remove {
+  align-items: center;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  height: 12px;
+  justify-content: center;
+  padding: 0;
+  width: 12px;
+}
+
+.pill-input {
+  background-color: transparent;
+  border: none;
+  display: block;
+  flex-grow: 1;
+  font-family: inherit;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 22px;
+  min-width: 150px;
+  outline: none;
+  padding: 0;
+}
+
+.pill-input::placeholder {
+  color: #adb5bd;
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+}
+
+.pill-input:focus::placeholder {
+  color: transparent;
+}

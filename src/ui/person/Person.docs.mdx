@@ -1,0 +1,12 @@
+import { Canvas, Meta } from '@storybook/blocks';
+
+import * as PersonStories from './Person.stories';
+
+<Meta title="Компоненты/Person" of={PersonStories} />
+
+# Person
+
+Компонент `Person` отображает базовую информацию о пользователе,
+включая его контактные данные, команды, навыки и текущее время.
+
+<Canvas of={PersonStories.Default} />

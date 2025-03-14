@@ -1,0 +1,60 @@
+.page-header-left {
+  align-items: start;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  font-family: inherit;
+  grid-area: header-left;
+  justify-content: end;
+  overflow: hidden;
+  text-align: left;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.page-header-title {
+  display: block;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32px;
+  margin: 0;
+  overflow: hidden;
+  text-align: left;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.page-header-back {
+  color: #adb5bd;
+  cursor: pointer;
+  display: flex;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  margin-bottom: 4px;
+  margin-left: -6px;
+  overflow: hidden;
+  text-align: left;
+  text-decoration: none;
+  text-overflow: ellipsis;
+  transition: color var(--ps-duration, .15s) ease-in-out;
+  white-space: nowrap;
+}
+
+.page-header-back + .page-header-title {
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.page-header-back:hover {
+  color: #000;
+}
+
+.page-content {
+  display: flex;
+  flex-direction: column;
+  grid-area: content;
+  min-width: 0;
+  position: relative;
+  word-break: break-word;
+}

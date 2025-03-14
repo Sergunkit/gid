@@ -1,0 +1,9 @@
+export { declense } from './declense';
+export { formatPhone } from './formatPhone';
+export { getDatePeriod } from './getDatePeriod';
+export { getFullName } from './getFullName';
+export { getUniqueItemsById } from './getUniqueItemsById';
+export { getWeekDay } from './getWeekDay';
+export { getZoneTime } from './getZoneTime';
+export { isValidName } from './isValidName';
+export { sortByName } from './sortByName';

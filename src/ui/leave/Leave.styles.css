@@ -1,0 +1,45 @@
+.leave {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+}
+
+.leave-icon {
+  align-items: center;
+  background-color: #e9ecef;
+  border-radius: 50%;
+  display: flex;
+  height: 44px;
+  justify-content: center;
+  width: 44px;
+}
+
+.leave-image {
+  height: 32px;
+  width: 32px;
+}
+
+.leave-content {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.leave-period {
+  color: #000;
+  font-family: inherit;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 14px;
+  text-align: left;
+}
+
+.leave-reason {
+  color: #868e96;
+  font-family: inherit;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14px;
+  text-align: left;
+}

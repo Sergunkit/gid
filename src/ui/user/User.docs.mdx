@@ -1,0 +1,12 @@
+import { Canvas, Meta } from '@storybook/blocks';
+
+import * as UserStories from './User.stories';
+
+<Meta title="Компоненты/User" of={UserStories} />
+
+# User
+
+Компонент `User` отображает базовые данные пользователя
+в виде имени, должности и аватара пользователя.
+
+<Canvas of={UserStories.Default} />

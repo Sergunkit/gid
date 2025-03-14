@@ -1,0 +1,81 @@
+.link-item {
+  --ps-link-bg-color: transparent;
+  --ps-link-icon-color: #495057;
+  --ps-link-text-color: var(--ps-color-dimmed, #868e96);
+  -webkit-tap-highlight-color: transparent;
+  align-items: center;
+  appearance: none;
+  background-color: var(--ps-link-bg-color, transparent);
+  border: 0;
+  border-radius: 4px;
+  color: inherit;
+  cursor: pointer;
+  display: flex;
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 400;
+  gap: 12px;
+  line-height: 16px;
+  padding: 14px 12px;
+  text-align: left;
+  text-decoration: none;
+  touch-action: manipulation;
+  transition-duration: .15s;
+  transition-property: background-color, color;
+  transition-timing-function: ease-in-out;
+  user-select: none;
+  width: 100%;
+}
+
+.link-item:hover,
+.link-item.active {
+  --ps-link-bg-color: #e7f5ff;
+  --ps-link-icon-color: var(--ps-link-color);
+  --ps-link-text-color: var(--ps-link-color);
+}
+
+.link-item svg {
+  display: block;
+  height: 16px;
+  width: 16px;
+}
+
+.link-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.link-icon svg {
+  color: var(--ps-link-icon-color, #495057);
+  transition-duration: .15s;
+  transition-property: color;
+  transition-timing-function: ease-in-out;
+}
+
+.link-text {
+  color: var(--ps-link-text-color, #868e96);
+  flex: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  transition-duration: .15s;
+  transition-property: color;
+  transition-timing-function: ease-in-out;
+  white-space: nowrap;
+}
+
+.link-chevron {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform .15s ease;
+}
+
+.link-children {
+  display: block;
+  padding-left: 28px;
+}
+
+.link-children .link-item {
+  background-color: transparent;
+}

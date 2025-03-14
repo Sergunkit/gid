@@ -1,0 +1,21 @@
+.parameter {
+  display: grid;
+  grid-gap: 8px;
+  grid-template-columns: 24px auto;
+  margin-bottom: 8px;
+}
+
+.parameter-icon {
+  align-items: center;
+  color: #adb5bd;
+  display: flex;
+  height: 24px;
+  justify-content: center;
+  width: 24px;
+}
+
+.parameter-text {
+  font-size: 14px;
+  line-height: 16px;
+  padding-top: 4px;
+}

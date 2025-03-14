@@ -1,0 +1,46 @@
+.badge {
+  --badge-font-size: 12px;
+  --badge-line-height: 14px;
+  --badge-padding: 2px 8px;
+  align-items: center;
+  border-radius: 50vw;
+  color: #000;
+  font-family: inherit;
+  font-size: var(--badge-font-size);
+  font-weight: 600;
+  line-height: var(--badge-line-height);
+  padding: var(--badge-padding);
+  text-align: left;
+}
+
+.badge-small {
+  --badge-font-size: 10px;
+  --badge-line-height: 12px;
+  --badge-padding: 2px 4px;
+}
+
+.badge-large {
+  --badge-font-size: 18px;
+  --badge-line-height: 20px;
+  --badge-padding: 6px 16px;
+}
+
+.badge-green {
+  background-color: #e6fcf5;
+  color: #20c997;
+}
+
+.badge-orange {
+  background-color: #fff4e6;
+  color: #ff922b;
+}
+
+.badge-blue {
+  background-color: #e7f5ff;
+  color: #339af0;
+}
+
+.badge-purple {
+  background-color: #f8f0fc;
+  color: #cc5de8;
+}

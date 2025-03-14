@@ -1,0 +1,85 @@
+.navigation {
+  background-color: #f8f9fa;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  min-width: 240px;
+  overflow-y: auto;
+  padding: 21px 24px;
+  position: sticky;
+  top: 0;
+  transition: margin-left .3s ease-in-out;
+  width: 240px;
+}
+
+@media screen and (width < 768px) {
+  .navigation {
+    height: 100%;
+    margin-left: -240px;
+    position: fixed;
+    width: 240px;
+    z-index: 9;
+  }
+
+  .navigation.opened {
+    margin-left: 0;
+  }
+}
+
+.navigation-list {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.navigation-top {
+  flex-grow: 1;
+}
+
+.navigation-bottom {
+  --ps-exit-icon-color: #ff6b6b;
+  --ps-exit-text-color: #868e96;
+}
+
+.navigation-item {
+  background-color: transparent;
+  border: none;
+  display: flex;
+  flex-direction: row;
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 400;
+  gap: 12px;
+  line-height: 16px;
+  outline: none;
+  padding: 14px 12px;
+  transition: background-color var(--ps-duration, .15s) ease-in-out;
+  width: 100%;
+}
+
+.navigation-item:hover {
+  --ps-exit-icon-color: #ff6b6b;
+  --ps-exit-text-color: #ff6b6b;
+  cursor: pointer;
+}
+
+.navigation-item.active {
+  --ps-exit-icon-color: #ff6b6b;
+  --ps-exit-text-color: #ff6b6b;
+  background-color: #e7f5ff;
+}
+
+.navigation-item-icon {
+  color: var(--ps-exit-icon-color, #ff6b6b);
+  flex: 0 0 16px;
+  height: 16px;
+  width: 16px;
+}
+
+.navigation-item-text {
+  color: var(--ps-exit-text-color, #868e96);
+}
+
+.link-item:not(:hover):not(.active) .logout-icon {
+  color: #ff6b6b;
+}

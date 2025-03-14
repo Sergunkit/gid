@@ -1,0 +1,38 @@
+.form-input {
+  --input-disabled-bg: #343a40;
+  --input-disabled-color: rgba(222, 226, 230, 0.75);
+  appearance: none;
+  background-clip: padding-box;
+  background-color: var(--ps-body-bg, #fff);
+  border: 1px solid #dee2e6;
+  border-radius: 4px;
+  color: var(--ps-body-color, #212529);
+  display: block;
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 400;
+  height: 36px;
+  line-height: 16px;
+  padding: 9px 11px;
+  text-align: left;
+  transition: border-color var(--ps-duration, .15s) ease-in-out;
+  width: 100%;
+}
+
+.form-input:focus {
+  background-color: var(--ps-body-bg, #fff);
+  border-color: #538ae2;
+  color: var(--ps-body-color, #212529);
+  outline: 0;
+}
+
+.form-input::placeholder {
+  color: var(--ps-placeholder-color, #adb5bd);
+  opacity: 1;
+}
+
+.form-input:disabled {
+  background-color: var(--input-disabled-bg);
+  color: var(--input-disabled-color);
+  opacity: 1;
+}

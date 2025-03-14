@@ -1,0 +1,90 @@
+.person {
+  transition: box-shadow var(--ps-duration, .15s) ease-in-out;
+}
+
+.person:hover {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.person-content {
+  display: grid;
+  grid-gap: 24px;
+  grid-template-columns: 96px auto;
+}
+
+.person-avatar {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  justify-content: start;
+}
+
+.person-timezone {
+  color: var(--ps-color-dimmed, #868e96);
+  font-family: inherit;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14px;
+  text-align: center;
+}
+
+.person-details {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.person-header {
+  display: grid;
+  grid-gap: 4px;
+  grid-template-areas:
+    'person-header-name person-header-contacts'
+    'person-header-teams person-header-teams';
+  grid-template-columns: 1fr auto;
+}
+
+.person-name {
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 600;
+  grid-area: person-header-name;
+  line-height: 24px;
+  overflow: hidden;
+  text-align: left;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.person-teams {
+  grid-area: person-header-teams;
+}
+
+.person-team {
+  color: var(--ps-color-dimmed, #868e96);
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16px;
+  text-align: left;
+}
+
+.person-team + .person-team::before {
+  content: '•';
+  margin: 0 8px;
+}
+
+.person-contacts {
+  color: var(--ps-color-dimmed, #868e96);
+  display: flex;
+  gap: 8px;
+  grid-area: person-header-contacts;
+}
+
+.person-contact {
+  align-items: center;
+  display: flex;
+  height: 24px;
+  justify-content: center;
+  width: 24px;
+}

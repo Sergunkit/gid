@@ -1,0 +1,72 @@
+.burger {
+  appearance: none;
+  background-color: transparent;
+  border: 0;
+  color: var(--ps-body-color, #212529);
+  cursor: pointer;
+  display: block;
+  height: 32px;
+  padding: 4px 2.5px;
+  touch-action: manipulation;
+  width: 32px;
+  -webkit-tap-highlight-color: transparent;
+
+  @media screen and (width >= 768px) {
+    display: none;
+  }
+
+  .burger:focus,
+  .burger:active {
+    outline: none;
+  }
+}
+
+.burger-icon {
+  box-sizing: border-box;
+  position: relative;
+  user-select: none;
+
+  &,
+  &::before,
+  &::after {
+    background-color: currentcolor;
+    border-radius: 3px;
+    display: block;
+    height: 3px;
+    outline: none;
+    transition-duration: .15s;
+    transition-property: background-color, transform;
+    width: 27px;
+
+    @media (prefers-reduced-motion: reduce) {
+      transition-duration: 0ms;
+    }
+  }
+
+  &::before,
+  &::after {
+    content: '';
+    left: 0;
+    position: absolute;
+  }
+
+  &::before {
+    top: -10.5px;
+  }
+
+  &::after {
+    top: 10.5px;
+  }
+
+  &[data-opened] {
+    background-color: transparent;
+
+    &::before {
+      transform: translateY(10.5px) rotate(45deg);
+    }
+
+    &::after {
+      transform: translateY(-10.5px) rotate(-45deg);
+    }
+  }
+}

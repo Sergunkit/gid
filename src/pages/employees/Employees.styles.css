@@ -1,0 +1,13 @@
+.employee-list {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  gap: 16px;
+}
+
+.employee-loader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 8px;
+}

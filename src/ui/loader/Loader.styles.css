@@ -1,0 +1,32 @@
+.loader {
+  --loader-bg: rgba(34, 139, 230, 0.1);
+  --loader-color: #228be6;
+  --loader-size: 24px;
+  display: inline-block;
+}
+
+.loader,
+.loader::after {
+  height: var(--loader-size);
+  width: var(--loader-size);
+}
+
+.loader::after {
+  animation: rotation 1.2s linear infinite;
+  border-color: var(--loader-bg) var(--loader-bg) var(--loader-color)
+    var(--loader-bg);
+  border-radius: 50%;
+  border-style: solid;
+  border-width: calc(var(--loader-size, 24px) / 8);
+  content: '';
+  display: block;
+}
+
+.loader-page {
+  align-items: center;
+  display: flex;
+  flex-grow: 1;
+  grid-area: content;
+  height: 100%;
+  justify-content: center;
+}

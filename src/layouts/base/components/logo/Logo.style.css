@@ -1,0 +1,29 @@
+.logo {
+  margin-bottom: 4px;
+}
+
+.logo-link {
+  align-items: center;
+  display: flex;
+  filter: saturate(0);
+  justify-content: flex-start;
+  outline: none;
+  padding: 10px 8px;
+  text-decoration: none;
+  transition-duration: var(--ps-duration);
+  transition-property: filter, max-width;
+  transition-timing-function: ease-in-out;
+}
+
+.logo-link:hover {
+  filter: saturate(1);
+}
+
+.logo-image {
+  background-color: transparent;
+  border: none;
+  display: block;
+  height: 20px;
+  outline: none;
+  width: 144px;
+}

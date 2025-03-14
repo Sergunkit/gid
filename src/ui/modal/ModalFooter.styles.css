@@ -1,0 +1,20 @@
+.modal-footer {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  padding-top: 20px;
+  width: 100%;
+}
+
+.modal-footer.align-left {
+  justify-content: flex-start;
+}
+
+.modal-footer.align-center {
+  justify-content: center;
+}
+
+.modal-footer.align-right {
+  justify-content: flex-end;
+}

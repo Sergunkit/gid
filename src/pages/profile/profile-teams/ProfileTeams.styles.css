@@ -1,0 +1,25 @@
+.profile-teams {
+  display: grid;
+  grid-gap: 12px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto auto;
+}
+
+.profile-teams-header {
+  grid-column: 1 / 4;
+  padding-bottom: 4px;
+}
+
+.profile-team {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.profile-team .card {
+  flex-grow: 1;
+}
+
+.profile-team-footer {
+  margin-top: 16px;
+}

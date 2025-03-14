@@ -1,0 +1,120 @@
+.modal {
+  inset: 0;
+  opacity: 0;
+  pointer-events: none;
+  position: fixed;
+  transition: opacity var(--ps-modal-duration, .2s) ease-in-out;
+  will-change: opacity;
+  z-index: 200;
+}
+
+.modal.opened {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.modal-overlay {
+  background-color: rgba(0, 0, 0, 0.6);
+  cursor: pointer;
+  inset: 0;
+  position: fixed;
+  z-index: 200;
+}
+
+.modal-inner {
+  align-items: center;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  left: 0;
+  opacity: 0;
+  padding: 20px 72px;
+  pointer-events: none;
+  position: fixed;
+  top: 0;
+  transform: translateY(-30px);
+  transition-duration: var(--ps-modal-duration, .2s);
+  transition-property: opacity, transform;
+  transition-timing-function: ease-in-out;
+  width: 100%;
+  will-change: opacity, transform;
+  z-index: 200;
+}
+
+.modal.opened .modal-inner {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.modal-content {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 24px 24px -8px rgba(0, 0, 0, 0.1);
+  display: block;
+  flex: 0 0 380px;
+  height: auto;
+  max-height: calc(100dvh - 40px);
+  max-width: 100%;
+  outline: 0;
+  overflow-y: auto;
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.modal.opened .modal-content {
+  pointer-events: all;
+}
+
+.modal-header {
+  align-items: center;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  min-height: 60px;
+  padding: 14px 11px 16px 16px;
+  position: sticky;
+  top: 0;
+  transition: padding-inline-end .1s;
+  z-index: 1000;
+}
+
+.modal-title {
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 18px;
+  text-align: left;
+}
+
+.modal-close {
+  align-items: center;
+  appearance: none;
+  background-color: transparent;
+  border: 0;
+  border-radius: 4px;
+  color: rgb(73, 80, 87);
+  cursor: pointer;
+  display: inline-flex;
+  height: 28px;
+  justify-content: center;
+  line-height: 1;
+  padding: 0;
+  position: relative;
+  text-align: left;
+  text-decoration: none;
+  touch-action: manipulation;
+  transition-duration: var(--ps-duration, .15s);
+  transition-property: background-color, border-color, color;
+  transition-timing-function: ease-in-out;
+  user-select: none;
+  width: 28px;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.modal-close:hover {
+  background-color: rgb(248, 249, 250);
+}
+
+.modal-body {
+  padding: 0 16px 16px;
+}

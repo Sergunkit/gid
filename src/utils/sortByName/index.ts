@@ -1,0 +1,1 @@
+export { sortByName } from './sortByName';

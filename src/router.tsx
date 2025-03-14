@@ -1,5 +1,5 @@
 import { createBrowserRouter } from 'react-router-dom';
-
+import { BaseLayout } from './indexLC.ts'
 import { ButtonCollapse } from './index.ts';
 // import { Boundary } from '@/pages';
 // import { Employees } from '@/pages';
@@ -14,6 +14,6 @@ import { ButtonCollapse } from './index.ts';
 export const router = createBrowserRouter([
   {
     path: '/',
-    element: <ButtonCollapse />, 
+    element: <BaseLayout />, 
   },
 ]);

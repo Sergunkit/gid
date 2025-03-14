@@ -1,0 +1,27 @@
+.contact-button {
+  background-color: transparent;
+  border: none;
+  display: flex;
+  gap: 8px;
+  outline: none;
+  padding: 0;
+  width: auto;
+}
+
+.contact-icon {
+  align-items: center;
+  color: var(--ps-placeholder-color, #adb5bd);
+  display: flex;
+  height: 24px;
+  justify-content: center;
+  width: 24px;
+}
+
+.contact-value {
+  color: var(--ps-body-color, #212529);
+  font-family: inherit;
+  font-size: 14px;
+  line-height: 16px;
+  padding-top: 4px;
+  text-align: left;
+}

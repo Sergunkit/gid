@@ -1,0 +1,1 @@
+export { declense } from './declense';

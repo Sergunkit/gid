@@ -1,0 +1,12 @@
+import { Canvas, Meta } from '@storybook/blocks';
+
+import * as NotificationStories from './Notification.stories';
+
+<Meta title="Компоненты/Notification" of={NotificationStories} />
+
+# Notification
+
+Компонент `Notification` отображает пользовательское уведомление,
+состоящее из иконки заданного типа и текста уведомление.
+
+<Canvas of={NotificationStories.Unread} />
