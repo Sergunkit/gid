@@ -2,19 +2,19 @@ import * as React from 'react';
 
 import { useNavigate } from 'react-router';
 
-import { useAuth } from '@/auth';
-import { Button, Loader } from '@/ui';
+// import { useAuth } from '@/auth';
+import { Button, Loader } from '../../indexUI.ts';
 
 import './Welcome.style.css';
-import logo from '@/assets/logo.png';
-import bg from '@/assets/welcome.jpg';
+// import logo from '/assets/logo.png';
+// import bg from '@/assets/welcome.jpg';
 
 /**
  * Компонент `Welcome` отображает страницу входа в приложение.
  */
 export function Welcome() {
   const navigate = useNavigate();
-  const { isAuthenticated, isLoading, login } = useAuth();
+  // const { isAuthenticated, isLoading, login } = useAuth();
 
   React.useEffect(() => {
     if (isAuthenticated && !isLoading) {

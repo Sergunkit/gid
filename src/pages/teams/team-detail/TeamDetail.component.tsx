@@ -1,19 +1,19 @@
 import * as React from 'react';
 
-import { Link, useLocation, useParams } from 'react-router';
-import { Button } from '@mantine/core';
+// import { Link, useLocation, useParams } from 'react-router';
+// import { Button } from '@mantine/core';
 
-import type { GenericError } from '@/api';
-import { useStructure } from '@/api';
-import { useAuth } from '@/auth';
-import { Card, Page, Pills, User } from '@/ui';
-import { getFullName, getUniqueItemsById } from '@/utils';
+// import type { GenericError } from '@/api';
+// import { useStructure } from '@/api';
+// import { useAuth } from '@/auth';
+// import { Card, Page, Pills, User } from '@/ui';
+// import { getFullName, getUniqueItemsById } from '@/utils';
 
-import { DeleteApplication } from './DeleteApplication';
-import { FormApplication } from './FormApplication';
-import type { Application } from './TeamDetail.types';
-import { getSubMembers } from './TeamDetail.utils';
-import { ViewApplication } from './ViewApplication';
+// import { DeleteApplication } from './DeleteApplication';
+// import { FormApplication } from './FormApplication';
+// import type { Application } from './TeamDetail.types';
+// import { getSubMembers } from './TeamDetail.utils';
+// import { ViewApplication } from './ViewApplication';
 
 import './TeamDetail.styles.css';
 

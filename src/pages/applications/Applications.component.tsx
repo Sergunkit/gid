@@ -1,4 +1,4 @@
-import { Page } from '@/ui';
+// import { Page } from '@/ui';
 
 /**
  * Компонент `Applications` отображает страницу заявок.

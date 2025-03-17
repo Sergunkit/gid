@@ -2,14 +2,14 @@ import * as React from 'react';
 
 import { Link, useLocation } from 'react-router';
 
-import type { UsersSearchData } from '@/api';
-import { GenericError } from '@/api';
-import { useUsersSearch } from '@/api';
-import { useInViewport } from '@/hooks';
-import { Loader, Page, Person } from '@/ui';
-import { getFullName } from '@/utils';
+// import type { UsersSearchData } from '@/api';
+// import { GenericError } from '@/api';
+// import { useUsersSearch } from '@/api';
+// import { useInViewport } from '@/hooks';
+// import { Loader, Page, Person } from '@/ui';
+// import { getFullName } from '@/utils';
 
-import { EmployeesPanel } from './Employees.panel';
+// import { EmployeesPanel } from './Employees.panel';
 
 import './Employees.styles.css';
 

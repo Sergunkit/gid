@@ -1,15 +1,15 @@
 import { useLocation, useParams } from 'react-router';
 
-import type { GenericError } from '@/api';
-import { useUser } from '@/api';
-import { useUserStructures } from '@/api';
-import { useAuth } from '@/auth';
-import { Page, Tabs } from '@/ui';
-import { getFullName } from '@/utils';
+// import type { GenericError } from '@/api';
+// import { useUser } from '@/api';
+// import { useUserStructures } from '@/api';
+// import { useAuth } from '@/auth';
+// import { Page, Tabs } from '@/ui';
+// import { getFullName } from '@/utils';
 
-import { getUserParams } from './Profile.utils';
-import { ProfileInfo } from './profile-info';
-import { ProfileTeams } from './profile-teams';
+// import { getUserParams } from './Profile.utils';
+// import { ProfileInfo } from './profile-info';
+// import { ProfileTeams } from './profile-teams';
 
 /**
  * Компонент `Profile` отображает страницу профиля пользователя.

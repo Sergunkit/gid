@@ -4,6 +4,7 @@ import { useLocation } from 'react-router';
 import { IconHierarchy2 } from '@tabler/icons-react';
 import { IconLogout } from '@tabler/icons-react';
 import { IconUsers } from '@tabler/icons-react';
+import { IconUsersPlus } from '@tabler/icons-react';
 
 // import { useAuth } from '@/auth';
 import { useDisclosure } from '../../../../indexHooks.ts';
@@ -76,9 +77,27 @@ export function Navigation({ opened, onToggle }: NavigationProps) {
               current={pathname}
             />
           </Link>
+          <Link
+            href="/bid"
+            text="Заявки"
+            icon={<IconUsersPlus />}
+            current={pathname}
+          >
+            <Link
+              href="/bid-list"
+              text="Смотреть заявки"
+              current={pathname}
+            />
+            <Link
+              href="/bid-add"
+              text="Создать заявку"
+              current={pathname}
+            />
+          </Link>
         </nav>
         <div className="navigation-bottom">
           <button
+            type='button'
             className="navigation-item"
             onClick={open}
           >

@@ -1,27 +1,27 @@
 import { Link, useLocation } from 'react-router';
 import { IconCake } from '@tabler/icons-react';
 
-import type { UserDetail } from '@/api';
-import { useUpdateMe } from '@/api';
-import { useAuth } from '@/auth';
-import {
-  Card,
-  Contact,
-  Definition,
-  Leave,
-  Pills,
-  Status,
-  Textarea,
-  User,
-} from '@/ui';
-import { formatPhone } from '@/utils';
-import { getDatePeriod } from '@/utils';
-import { getFullName } from '@/utils';
-import { getWeekDay } from '@/utils';
-import { getZoneTime } from '@/utils';
+// import type { UserDetail } from '@/api';
+// import { useUpdateMe } from '@/api';
+// import { useAuth } from '@/auth';
+// import {
+//   Card,
+//   Contact,
+//   Definition,
+//   Leave,
+//   Pills,
+//   Status,
+//   Textarea,
+//   User,
+// } from '@/ui';
+// import { formatPhone } from '@/utils';
+// import { getDatePeriod } from '@/utils';
+// import { getFullName } from '@/utils';
+// import { getWeekDay } from '@/utils';
+// import { getZoneTime } from '@/utils';
 
-import { Parameter, ProfileAvatar } from './components';
-import { getBirthday } from './ProfileInfo.utils';
+// import { Parameter, ProfileAvatar } from './components';
+// import { getBirthday } from './ProfileInfo.utils';
 
 import './ProfileInfo.styles.css';
 

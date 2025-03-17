@@ -1,12 +1,12 @@
 import * as React from 'react';
 
-import { useLocation, useNavigate, useRouteError } from 'react-router';
+// import { useLocation, useNavigate, useRouteError } from 'react-router';
 
-import { Badge, Button, Loader, Page } from '@/ui';
+// import { Badge, Button, Loader, Page } from '@/ui';
 
-import { getStatusData } from './Status.utils';
+// import { getStatusData } from './Status.utils';
 
-import './Status.styles.css';
+// import './Status.styles.css';
 
 /**
  * Компонент `Status` отображает страницу с базовой информацией об ошибке,

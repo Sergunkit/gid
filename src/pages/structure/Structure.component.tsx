@@ -1,12 +1,12 @@
 import { useParams } from 'react-router';
 
-import type { GenericError } from '@/api';
-import { useStructure } from '@/api';
-import { useStructuresTree } from '@/api';
-import { Page } from '@/ui';
+// import type { GenericError } from '@/api';
+// import { useStructure } from '@/api';
+// import { useStructuresTree } from '@/api';
+// import { Page } from '@/ui';
 
-import { StructureElement } from './Structure.element';
-import { StructureTree } from './Structure.tree';
+// import { StructureElement } from './Structure.element';
+// import { StructureTree } from './Structure.tree';
 
 import './Structure.styles.css';
 

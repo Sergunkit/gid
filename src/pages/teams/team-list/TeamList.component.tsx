@@ -1,9 +1,9 @@
 import { Link, useLocation } from 'react-router';
 
-import type { GenericError } from '@/api';
-import { useStructures } from '@/api';
-import { Card, Input, Page, Pills, User } from '@/ui';
-import { declense, getFullName } from '@/utils';
+// import type { GenericError } from '@/api';
+// import { useStructures } from '@/api';
+// import { Card, Input, Page, Pills, User } from '@/ui';
+// import { declense, getFullName } from '@/utils';
 
 import './TeamList.style.css';
 

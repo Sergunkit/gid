@@ -8,3 +8,5 @@ export { Structure } from './structure';
 export { TeamDetail } from './teams';
 export { TeamList } from './teams';
 export { Welcome } from './welcome';
+// export { FormApplication } from './teams/team-detail/FormApplication.tsx'
+export { JobApplicationForm } from './form/FormApplication.tsx'
