@@ -10,13 +10,16 @@
     "npm:@types/react-dom@^19.0.4": "19.0.4_@types+react@19.0.10",
     "npm:@types/react@^19.0.10": "19.0.10",
     "npm:@vitejs/plugin-react-swc@^3.8.0": "3.8.0_vite@6.2.2",
+    "npm:core-js@^3.41.0": "3.41.0",
     "npm:dayjs@^1.11.13": "1.11.13",
+    "npm:property-expr@^2.0.6": "2.0.6",
     "npm:react-dom@19": "19.0.0_react@19.0.0",
     "npm:react-router-dom@^7.3.0": "7.3.0_react@19.0.0_react-dom@19.0.0__react@19.0.0",
     "npm:react-router@^7.3.0": "7.3.0_react@19.0.0_react-dom@19.0.0__react@19.0.0",
     "npm:react@19": "19.0.0",
     "npm:vite@*": "6.2.2",
-    "npm:vite@^6.1.1": "6.2.2"
+    "npm:vite@^6.1.1": "6.2.2",
+    "npm:yup@^1.6.1": "1.6.1"
   },
   "npm": {
     "@babel/runtime@7.26.10": {
@@ -151,7 +154,7 @@
         "react-number-format",
         "react-remove-scroll",
         "react-textarea-autosize",
-        "type-fest"
+        "type-fest@4.37.0"
       ]
     },
     "@mantine/dates@7.17.2_@mantine+core@7.17.2__@mantine+hooks@7.17.2___react@19.0.0__react@19.0.0__react-dom@19.0.0___react@19.0.0__@types+react@19.0.10_@mantine+hooks@7.17.2__react@19.0.0_dayjs@1.11.13_react@19.0.0_react-dom@19.0.0__react@19.0.0_@types+react@19.0.10": {
@@ -339,6 +342,9 @@
     "cookie@1.0.2": {
       "integrity": "sha512-9Kr/j4O16ISv8zBBhJoi4bXOYNTkFLOqSL3UDB0njXxCXNezjeyVrJyGOWtgfs/q2km1gwBcfH8q1yEGoMYunA=="
     },
+    "core-js@3.41.0": {
+      "integrity": "sha512-SJ4/EHwS36QMJd6h/Rg+GyR4A5xE0FSI3eZ+iBVpfqf1x0eTSg1smWLHrA+2jQThZSh97fmSgFSU8B61nxosxA=="
+    },
     "csstype@3.1.3": {
       "integrity": "sha512-M1uQkMl8rQK/szD0LNhtqxIPLpimGm8sOBwU7lLnCpSbTyY3yeU1Vc7l4KT5zT4s/yOxHH5O7tIuuLOCnLADRw=="
     },
@@ -403,6 +409,9 @@
         "picocolors",
         "source-map-js"
       ]
+    },
+    "property-expr@2.0.6": {
+      "integrity": "sha512-SVtmxhRE/CGkn3eZY1T6pC8Nln6Fr/lu1mKSgRud0eC73whjGfoAogbn78LkD8aFL0zz3bAFerKSnOl7NlErBA=="
     },
     "react-dom@19.0.0_react@19.0.0": {
       "integrity": "sha512-4GV5sHFG0e/0AD4X+ySy6UJd3jVl1iNsNHdpad0qhABJ11twS3TTBnseqsKurKcsNqCEFeGL3uLpVChpIO3QfQ==",
@@ -520,11 +529,20 @@
     "tabbable@6.2.0": {
       "integrity": "sha512-Cat63mxsVJlzYvN51JmVXIgNoUokrIaT2zLclCXjRd8boZ0004U4KCs/sToJ75C6sdlByWxpYnb5Boif1VSFew=="
     },
+    "tiny-case@1.0.3": {
+      "integrity": "sha512-Eet/eeMhkO6TX8mnUteS9zgPbUMQa4I6Kkp5ORiBD5476/m+PIRiumP5tmh5ioJpH7k51Kehawy2UDfsnxxY8Q=="
+    },
+    "toposort@2.0.2": {
+      "integrity": "sha512-0a5EOkAUp8D4moMi2W8ZF8jcga7BgZd91O/yabJCFY8az+XSzeGyTKs0Aoo897iV1Nj6guFq8orWDS96z91oGg=="
+    },
     "tslib@2.8.1": {
       "integrity": "sha512-oJFu94HQb+KVduSUQL7wnpmqnfmLsOA/nAh6b6EH0wCEoK0/mPeXU6c3wKDV83MkOuHPRHtSXKKU99IBazS/2w=="
     },
     "turbo-stream@2.4.0": {
       "integrity": "sha512-FHncC10WpBd2eOmGwpmQsWLDoK4cqsA/UT/GqNoaKOQnT8uzhtCbg3EoUDMvqpOSAI0S26mr0rkjzbOO6S3v1g=="
+    },
+    "type-fest@2.19.0": {
+      "integrity": "sha512-RAH822pAdBgcNMAfWnCBU3CFZcfZ/i1eZjwFU/dsLKumyuuP3niueg2UAukXYF0E2AAoc82ZSSf9J0WQBinzHA=="
     },
     "type-fest@4.37.0": {
       "integrity": "sha512-S/5/0kFftkq27FPNye0XM1e2NsnoD/3FS+pBmbjmmtLT6I+i344KoOf7pvXreaFsDamWeaJX55nczA1m5PsBDg=="
@@ -576,7 +594,41 @@
         "postcss",
         "rollup"
       ]
+    },
+    "yup@1.6.1": {
+      "integrity": "sha512-JED8pB50qbA4FOkDol0bYF/p60qSEDQqBD0/qeIrUCG1KbPBIQ776fCUNb9ldbPcSTxA69g/47XTo4TqWiuXOA==",
+      "dependencies": [
+        "property-expr",
+        "tiny-case",
+        "toposort",
+        "type-fest@2.19.0"
+      ]
     }
+  },
+  "redirects": {
+    "https://esm.sh/@types/toposort@~2.0.7/index.d.ts": "https://esm.sh/@types/toposort@2.0.7/index.d.ts",
+    "https://esm.sh/property-expr@^2.0.5?target=denonext": "https://esm.sh/property-expr@2.0.6?target=denonext",
+    "https://esm.sh/tiny-case@^1.0.3?target=denonext": "https://esm.sh/tiny-case@1.0.3?target=denonext",
+    "https://esm.sh/toposort@^2.0.2?target=denonext": "https://esm.sh/toposort@2.0.2?target=denonext",
+    "https://esm.sh/yup": "https://esm.sh/yup@1.6.1"
+  },
+  "remote": {
+    "https://esm.sh/property-expr@2.0.6/denonext/property-expr.mjs": "2a2720575d71abf19295ddeeab70b9c0f5411fd525ac8a9695992b9016e2c36c",
+    "https://esm.sh/property-expr@2.0.6?target=denonext": "ec33de2905cf3ac4625381f2a872d5047ce357d0982713d9926f3803586ea7b8",
+    "https://esm.sh/tiny-case@1.0.3/denonext/tiny-case.mjs": "1e4151bd8c50c8c58743b58c69555a3f9674748b89bf1cb4dfee6839e3a66977",
+    "https://esm.sh/tiny-case@1.0.3?target=denonext": "c6c07e0f2e750fcc00218803269ad1149eb45596ef240663076a4bb0898d04d7",
+    "https://esm.sh/toposort@2.0.2/denonext/toposort.mjs": "c0523a0aec4aba7e5fb253c5fbaa5914a06d57edba2ded4d1c42d88fa8aef56c",
+    "https://esm.sh/toposort@2.0.2?target=denonext": "df6cb93ae7ec6bb139cdbd6a2e34a4727ab89f02a8dc1254bd066257fd6ce258",
+    "https://esm.sh/yup@1.6.1": "2bb26e926a0eebf200e3c7d158974e7b09294c6db76b372630b7fecb2473320e",
+    "https://esm.sh/yup@1.6.1/denonext/yup.mjs": "99e10f17dee81d058ada9cb9aa3c127bff9d9c98dc25a1ad2120fb554c9432a9",
+    "https://jspm.dev/npm:property-expr@2": "b78c395128ab2a9c1e61d625f9399c660f6fb0183a68018622e784441e166677",
+    "https://jspm.dev/npm:property-expr@2.0.6!cjs": "62b2bc430102bb1cb5e276e9dd5c996db5726add1c6b244035692e9ed3e63228",
+    "https://jspm.dev/npm:tiny-case@1": "5be524968fd47869cbe881849ecebfb8c522c86f23ca5f6c3213b964692b4bab",
+    "https://jspm.dev/npm:tiny-case@1.0.3!cjs": "28371d24495f98ec79060582a62e2064cbb054faeb773071906f305c6b540556",
+    "https://jspm.dev/npm:toposort@2": "dea365a81193f30b9a546ea029df59ddbca131614949d3ad8f40a6b890f38def",
+    "https://jspm.dev/npm:toposort@2.0.2!cjs": "2fcd16ecd180a84c8ec61bdf05b3dc70e5ae107997d59ee734432b933289737c",
+    "https://jspm.dev/npm:yup@1.3.2": "22f1ad132bb3c61785952b544385c8a3b0b4038751c3e5289fd7182c0f02a0c7",
+    "https://jspm.dev/yup": "f3005f17ac5eb867fccf9588ef171df6831d4a1d7197620d8df53f37e38785ad"
   },
   "workspace": {
     "dependencies": [
@@ -589,11 +641,13 @@
       "npm:@types/react@^19.0.10",
       "npm:@vitejs/plugin-react-swc@^3.8.0",
       "npm:dayjs@^1.11.13",
+      "npm:property-expr@^2.0.6",
       "npm:react-dom@19",
       "npm:react-router-dom@^7.3.0",
       "npm:react-router@^7.3.0",
       "npm:react@19",
-      "npm:vite@^6.1.1"
+      "npm:vite@^6.1.1",
+      "npm:yup@^1.6.1"
     ]
   }
 }

@@ -21,10 +21,12 @@
     "@types/react-dom": "npm:@types/react-dom@^19.0.4",
     "@vitejs/plugin-react-swc": "npm:@vitejs/plugin-react-swc@^3.8.0",
     "dayjs": "npm:dayjs@^1.11.13",
+    "property-expr": "npm:property-expr@^2.0.6",
     "react": "npm:react@^19.0.0",
     "react-dom": "npm:react-dom@^19.0.0",
     "react-router": "npm:react-router@^7.3.0",
     "react-router-dom": "npm:react-router-dom@^7.3.0",
-    "vite": "npm:vite@^6.1.1"
+    "vite": "npm:vite@^6.1.1",
+    "yup": "npm:yup@^1.6.1"
   }
 }
