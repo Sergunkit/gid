@@ -10,7 +10,7 @@ export function JobApplicationForm() {
 
   const handleSubmit: React.FormEventHandler<HTMLFormElement> = (e) => {
     e.preventDefault();
-    
+    navigate('/', { replace: false });
     const formData = { skill, role, hireDate, stack };
     sessionStorage.setItem('jobApplicationData', JSON.stringify(formData));
     console.log('Данные формы:', formData);
